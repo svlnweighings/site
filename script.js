@@ -16,7 +16,7 @@ function CreateProductElement(imgUrl,productName,productRate,content,cap) {
   const productU =  `
 <div class="col-md-6 p-5">
 <div class="row">
-  <div class="col-md-6 p-2 d-flex justify-content-center rounded bg-warning">
+  <div class="col-md-6 p-2 d-flex align-items-center justify-content-center rounded bg-warning">
  <a href="${imgUrl}" target="_blank"  > <img src="${imgUrl}" class="img-fluid  img-thumbnail" height="180" width ="180"  alt="${content}" srcset=""> </a>
   </div>
   <div class="col-md-6 p-3">
