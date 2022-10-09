@@ -13,7 +13,7 @@ async function fetchProducts() {
 
 
 function CreateProductElement(imgUrl,productName,productRate,content,cap) {
-  const productU =  `
+  const productU =  `/**---
   <div class="col-sm-6 bg-white p-3 d-flex  align-items-center">
   <div class="row-content">
     <img src="${imgUrl}" class="img-fluid  img-thumbnail" height="180" width ="180"  alt="${content}" srcset="">
@@ -29,7 +29,23 @@ function CreateProductElement(imgUrl,productName,productRate,content,cap) {
     <p class="  fw-bolder "  style="resize:none ;" >Capactiy : ${cap}
     </p>
   </div>
-</div>`
+</div> **/
+
+    <tr class="table-primary" >
+              
+              <td>
+                <img src="${imgUrl}" id="1" class="img-fluid img-responsive img-thumbnail rounded-top" width="200" alt="">
+              </td>
+              <td class="border border-2 fw-bold ">${productName} <br>
+              ${productRate}<br>
+              ${content}<br></td>
+              <td>
+                <a href="#"  class="btn m-1 ms-0 d-none btn-primary">Edit  <i class="fa fa-edit" aria-hidden="true"></i></a>
+                <a href="#" onclick="DeleteProduct('https://6321f07afd698dfa29032037.mockapi.io/test/all/svln/${id}')" class="btn m-1 ms-0 btn-danger">Delete <i class="fa-solid fa-trash"></i> </a>
+              </td>
+              
+    </tr>
+`
  return productU
 }
 
