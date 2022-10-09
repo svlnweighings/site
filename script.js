@@ -16,13 +16,13 @@ function CreateProductElement(imgUrl,productName,productRate,content,cap) {
   const productU =  `
 <div class="col-md-6 p-5">
 <div class="row">
-  <div class="col-md-6 p-2 bg-warning">
- <a href="${imgUrl}"> <img src="${imgUrl}" class="img-fluid  img-thumbnail" height="180" width ="180"  alt="${content}" srcset=""> </a>
+  <div class="col-md-6 p-2 d-flex justify-content-center rounded bg-warning">
+ <a href="${imgUrl}" target="_blank"  > <img src="${imgUrl}" class="img-fluid  img-thumbnail" height="180" width ="180"  alt="${content}" srcset=""> </a>
   </div>
   <div class="col-md-6 p-3">
   <div class="contentS  align-self-stretch  ps-2">
     <p class="h3 border border-warning fs-4 fw-bold text-uppercase p-2 border-2">${productName}</p>
-    <p class="rate text-muted"><b>₹</b>${productRate}</p>
+    <p class="rate text-muted"><b></b>${productRate}</p>
     <p class="border border-2 p-2  fw-bolder "  style="resize:none ;" disabled>
       
      ${content}
